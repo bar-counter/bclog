@@ -1,4 +1,4 @@
-package bclog
+package log
 
 const (
 	DefaultRunAddr   = ":31000"

@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-	bclog "github.com/bar-counter/template"
-
+	"github.com/bar-counter/bclog"
 	"github.com/gin-gonic/gin"
 )
 
@@ -11,8 +10,8 @@ func main() {
 	r := gin.Default()
 
 	addr := ":31000"
-	bclog.Config()
-	bclog.Infof("run addr: %v", addr)
+	log.Config()
+	log.Infof("run addr: %v", addr)
 
 	err := r.Run(addr)
 	if err != nil {
